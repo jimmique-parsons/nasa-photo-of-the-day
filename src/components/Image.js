@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./image.css";
 
 const Image = ({ url, copyright, date }) => {

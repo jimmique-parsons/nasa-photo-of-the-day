@@ -1,7 +1,7 @@
 main-text-div {
     padding: 30px 40px;
     background-color: white;
-    color: #222;
+    color: #fff;
     width: 100%;
 }
 
@@ -9,8 +9,11 @@ main-text-div {
     line-height: 1.5rem;
     padding-right: 30px;
     margin: 0;
+    text-align: inherit;
+    color: #fff;
 }
 
 .inner-text-div {
     height: 70%;
+    margin-top: 30px;
 }

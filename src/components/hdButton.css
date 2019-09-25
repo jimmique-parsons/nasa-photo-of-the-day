@@ -1,0 +1,19 @@
+.hd-button {
+    width: 150px;
+    padding: 12.5px 0;
+    float: inherit;
+    margin-top: 60px;
+    background-color: #222;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgb(129, 182, 224);
+    outline: none;
+    transition-duration: 0.2s;
+    cursor: pointer;
+  }
+  
+  .hd-button:hover {
+    background-color: rgb(129, 182, 224);
+    color: #222;
+  }

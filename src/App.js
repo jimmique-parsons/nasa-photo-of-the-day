@@ -10,6 +10,8 @@ function App() {
   const [imageDateState, setImageDateState] = useState();
   const [titleState, setTitleState] = useState();
   const [explinationState, setExplinationState] = useState();
+  const [hdState, setHDState] = useState();
+  const hdVisState = useState(false);
 
   useEffect(() => {
     axios
@@ -24,12 +26,25 @@ function App() {
         setImageDateState(res.data.date);
         setTitleState(res.data.title);
         setExplinationState(res.data.explanation);
+        setHDState(res.data.hdurl);
       })
       .catch(err => console.log(err));
   }, []);
 
   return (
     <div className="App">
+      <div
+        className="hd-modal"
+        style={{ visibility: hdVisState[0] ? "visible" : "hidden" }}
+      >
+        <img src={hdState} alt="HD From NASA" />
+        <button
+          className="close-button"
+          onClick={() => hdVisState[1](!hdVisState[0])}
+        >
+          X
+        </button>
+      </div>
       <h1>NASA Photo of the Day</h1>
       <div className="main-container">
       <Image
@@ -37,7 +52,7 @@ function App() {
         copyright={copyrightState}
         date={imageDateState}
       />
-      <ImageText title={titleState} exp={explinationState} />
+      <ImageText title={titleState} exp={explinationState} hdVisState={hdVisState}/>
       </div>
     </div>
   );
