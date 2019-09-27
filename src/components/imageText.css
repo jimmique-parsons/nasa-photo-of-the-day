@@ -9,7 +9,7 @@ main-text-div {
     line-height: 1.5rem;
     padding-right: 30px;
     margin: 0;
-    text-align: inherit;
+    text-align: left;
     color: #fff;
 }
 

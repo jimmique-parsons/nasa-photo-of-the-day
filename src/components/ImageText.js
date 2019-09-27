@@ -9,7 +9,7 @@ const ImageText = ({ title, exp, hdVisState }) => {
             <h3>{title}</h3>
             <div className="inner-text-div">
               <Scrollbar
-                style={{ width: "100%", height: "100%" }}
+                style={{ width: "200%", height: "100%" }}
                 maximalThumbYSize={100}
               >
                 <p>{exp}</p>

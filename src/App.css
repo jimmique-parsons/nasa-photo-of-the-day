@@ -39,7 +39,7 @@
 
 .main-container {
   display: flex;
-  width: 90%;
+  width: 80%;
   height: 80%;
   margin: 0 auto;
   transform: translateY(2%);
@@ -74,6 +74,7 @@
   right: 30px;
   cursor: pointer;
   outline: none;
+  transition-duration: 0.5s;
 }
 
 .close-button:hover {

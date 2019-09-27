@@ -1,16 +1,17 @@
 import React from "react";
+import { Image } from "semantic-ui-react";
 import "./image.css";
 
-const Image = ({ url, copyright, date }) => {
+const Img = ({ url, copyright, date }) => {
     return (
         <div className="img-container">
             <div className="img-footer">
                 <p className="copyright">Copyright © {copyright}</p>
                 <p className="photo-date">{date}</p>
             </div>
-            <img src={url} alt="From NASA" />;
+            <Image src={url} alt="From NASA" />;
         </div>
     );
 };
 
-export default Image;
+export default Img;
