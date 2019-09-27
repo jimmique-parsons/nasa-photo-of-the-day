@@ -1,9 +1,18 @@
 import React, { useState, useEffect } from "react";
+import styled from 'styled-components';
 import axios from "axios";
 import "./App.css";
 import Img from "./components/Image";
 import ImageText from "./components/ImageText";
 import { Container } from "semantic-ui-react";
+
+const Header = styled.h1`
+    
+    :hover {
+      color: #222;
+      text-shadow: 0 0 5px #e49100;
+    }  
+`;
 
 const head = document.head;
 const link = document.createElement("link");
@@ -53,7 +62,7 @@ function App() {
           X
         </button>
       </div>
-      <h1>NASA Photo of the Day</h1>
+      <Header>NASA Photo of the Day</Header>
       <Container className="main-container">
       <Img
         url={imageState}
